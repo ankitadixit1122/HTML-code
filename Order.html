@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="M3Favicon.png">
+    <title>MARS Munchie Meals</title>
+</head>
+<body>
+    <img src="Global Food Company Header.jpeg" alt="FoodImage-image">
+    <lable><h1>MARS Munchie Meals</h1></lable>
+    <hr>
+    <h2>&it;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu</h2>
+    <table border ="2" style="width:70%">
+        
+   
+        <tr>
+          <td><b><h3>Food Items</h3></b></td>
+          <td><b><h3>Price</h3></b></td>
+          
+        </tr>
+        <tr>
+            <td>Chicken Pizza &#127829</td>
+            <td>$9.00</td>
+        </tr>
+        <tr>
+            <td>Vegetable Pizza &#127829</td>
+            <td>$6.00</td>
+           </tr>
+           <tr>
+            <td>Chicken Kottu &#127831 </td>
+            <td>$7.00</td>
+           </tr>
+           <tr>
+            <td>Vegetable Kottu &#129367</td>
+            <td>$5.00</td>
+           </tr>
+           <tr>
+            <td>Water Bottle &#127862</td>
+            <td>$9.00</td>
+           </tr>
+           </table>
+        <br>
+        <br>
+    
+    <form action="payment.html" method ="post">
+        <fieldset>
+            <legend><h2>Select Food Item and Quantity</h2></legend>
+    <table style="width:100%" border ="2">
+        
+            <tr>
+              
+              <td><b><h3></h3>Food Item</h3></b></td>
+              <td><b><h3></h3>Select Food</h3></b></td>
+              <td><b><h3></h3>Quantity</h3></b></td>
+    
+            </tr>
+            <tr>
+              <td><b>Item 1</b></td>
+              <lable for ="fooditem"></lable>
+              <td><select name="fooditem" id ="fooditem" > <!--if you want user to select multiple-->
+                <option value ="SelectOne">Select One</option>    
+                <option value ="ChickenPizza">MARS Chicken Pizza</option>
+                <option value ="VegetablePizza">MARS Vegetable Pizza</option>
+                <option value ="ChickenKottu">Chicken Kottu</option>
+                <option value ="VegetableKottu">Vegetable Kottu</option>
+                </select></td>
+    
+            <td><label for="quantity"></label>
+                <input id="quantity" type="number" name="quantity" value="0" min="1" max="5" required /></td>
+                
+            </tr>
+            
+              <tr>
+                <td><b>Item 2</b></td>
+                <td><select id="fooditem" name="fooditem"  > <!--if you want user to select multiple-->
+                  <option value ="Select One">Select One</option>    
+                  <option value ="ChickenPizza">MARS Chicken Pizza</option>
+                  <option value ="VegetablePizza">MARS Vegetable Pizza</option>
+                  <option value ="ChickenKottu">Chicken Kottu</option>
+                  <option value ="VegetableKottu">Vegetable Kottu</option>
+                  </select></td></td>
+      
+                <td><label for="quantity"></label>
+                    <input id="quantity" type="number" name="quantity" value="0" min="0" max="5" required /></td>
+            </tr>
+              
+             <tr>
+                <td><b>Item 3</b></td>
+                <td><select id="fooditem" name="fooditem" > <!--if you want user to select multiple-->
+                  <option value ="Select One">Select One</option>    
+                  <option value ="ChickenPizza">MARS Chicken Pizza</option>
+                  <option value ="VegetablePizza">MARS Vegetable Pizza</option>
+                  <option value ="ChickenKottu">Chicken Kottu</option>
+                  <option value ="VegetableKottu">Vegetable Kottu</option>
+                  </select></td></td>
+      
+                <td><label for="quantity"></label>
+                    <input id="quantity" type="number" name="quantity" value="0" min="0" max="5" required /></td>
+            </tr>
+    
+            <tr>
+                <td><b>Item 4</b></td>
+                <td><select id="fooditem" name="fooditem"  > <!--if you want user to select multiple-->
+                  <option value ="SelectOne">Select One</option>    
+                  <option value ="ChickenPizza">MARS Chicken Pizza</option>
+                  <option value ="VegetablePizza">MARS Vegetable Pizza</option>
+                  <option value ="ChickenKottu">Chicken Kottu</option>
+                  <option value ="VegetableKottu">Vegetable Kottu</option>
+                  </select></td></td>
+      
+                  <td><label for="quantity"></label>
+                    <input id="quantity" type="number" name="quantity" value="0" min="0" max="5" required /></td>
+                
+            </tr>
+        
+    </table>
+    <br>
+    <br>
+    <input type ="Submit" Value="Confirm Order" /> <br>
+    </fieldset>
+</form>
+<footer>
+  <p>Author:Ankita Dixit</p>
+  <p><a href="mailto:hege@example.com">ankitadixit1122@gmail.com</a></p>
+</footer>
+</body>
+</html>
