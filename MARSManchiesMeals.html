@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="M3Favicon.png">
+    <link rel ="stylesheet" href="main.css">
     <title>MARS Munchie Meals</title>
+    <style>
+    </style>
 </head>
 <body>
+    <div class ="center">
     <img src="Global Food Company Header.jpeg" alt="FoodImage-image">
-    <lable><h1 >MARS Munchie Meals</h1></lable>
-    <p>Free MARS Pizza. One for the Price of None.
-        With One Assignment Completion , score a free Large MARS Pizza .* Plus, with MARS Rewards, you’ll earn points to redeem for free food on every eligible order.  </p>
-    
-  
+    <lable><h1 id="heading1style">MARS Munchie Meals</h1></lable>
+    <!--<p>Free MARS Pizza. One for the Price of None.
+        With One Assignment Completion , score a free Large MARS Pizza .* Plus, with MARS Rewards, you’ll earn points to redeem for free food on every eligible order.  </p> -->
+    </div>
+        
+    <div>
     <form action="DeliveryOption.html" method ="post">
         <fieldset>
-            <legend>Login</legend>
-    <table>
+            <legend><h2 id="heading2style">Login</h2></legend>
+    <table id ="logintable">
 
     <tr>
-        <td> <lable for ="email"> Email</lable></td>
-        <td><input type ="email" name="email" id ="email" placeholder ="Enter Your Email" required/><br></td>
+        <td id ="td1"> <lable for ="email"> Email</lable></td>
+        <td  id ="td1"><input type ="email" name="email" id ="email" placeholder ="Enter Your Email" required/><br></td>
     </tr>
         
     <tr>
-        <td><lable for ="password"> Password:</lable></td><br>
-        <td><input type ="password" name="Password" id ="password" placeholder ="Enter Your Password" required/><br></td>
+        <td id ="td1"><lable for ="password"> Password:</lable></td><br>
+        <td id ="td1"><input type ="password" name="Password" id ="password" placeholder ="Enter Your Password" required/><br></td>
     </tr>
 
     </table>
     <br>
     <br>
-    <input type ="Submit" Value="Sign In" />  <a href="ForgotPassword.html">Forget your Password?</a>
+    <input type ="Submit" Value="Login" /> 
+    <a href="ForgotPassword.html">Forget your Password?</a>
     <br>
     <br>
     <br>
 
         </fieldset>
 </form>
-<footer>
-    <p>Author:Ankita Dixit</p>
-    <p><a href="mailto:hege@example.com">ankitadixit1122@gmail.com</a></p>
-  </footer>
+</div>
+<footer class ="footer">
+    <p>Author: Ankita Dixit<br>
+    <a href="mailto:ankitadixit1122@gmail.com">Contact Us</a>
+</footer> 
 </body>
 </html>

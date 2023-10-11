@@ -1,13 +1,11 @@
 img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 #heading1style{
     text-shadow: 4px 4px 4px rgb(154, 168, 154);
-    font-size: 40px;
+    font-size: 30px;
     text-transform: capitalize;
     white-space: nowrap;
     text-align: center;
@@ -28,7 +26,12 @@ img {
 
 }
 
-table,td{
+#logintable{
+border: none;
+}
+
+
+td{
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
@@ -37,12 +40,16 @@ table,td{
 }
 
 #td1{
-    border: 1px solid black;
+    border:none;
     border-collapse: collapse;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+li:before{
+    content: "🦁";
 }
 
 #th1 {
@@ -61,15 +68,11 @@ table,td{
     
 }
     
-#tr1 {
-    
-
-}
 .footer {
     position: fixed;
-    font-size: 18px;
+    font-size: 10px;
     left: 0;
-    height: 55 px;;
+    height: 70 px;;
     bottom: 0;
     width: 100%;
     background-color:rgb(80, 94, 78);
@@ -78,22 +81,24 @@ table,td{
     margin-left: auto;
     margin-right: auto;
 }
-a:link {
-    color: rgb(235, 228, 229);
+a{ /**/
+    color: rgb(82, 185, 38);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     font-weight: Bold;
-    
 }
-a:hover {
-    color: red;
+a:active {
+    background-color: yellow;
+    /* color: rgb(13, 174, 112); */
 }
-
+a:visited{
+    color:rgb(178, 15, 232);
+}
 .center{
     text-align: center;
     white-space: nowrap;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 
 }
 
@@ -102,4 +107,21 @@ a:hover {
     width: 60%;
     white-space: nowrap;
     padding-top: px;
+}
+
+input:focus {
+    background-color: rgb(226, 226, 144);
+}
+
+li{
+    list-style-type: none;
+}
+
+ul {
+    content: "\231B";
+    }
+
+table tr td p:nth-child(n){
+    background-color: rgb(243, 243, 198);
+
 }
