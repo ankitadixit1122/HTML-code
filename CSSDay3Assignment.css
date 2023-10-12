@@ -1,0 +1,63 @@
+
+.tab {
+  overflow: hidden;
+  background-color: #118fb9;
+  height: 40px;
+  width: 100%;
+   
+
+ }
+  
+  .tab button {
+    background-color: #118fb9;
+    float: left;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight:bolder;
+    font-style: italic;
+    color:rgb(55, 74, 74);
+    font-size: medium;
+    
+
+}
+  
+  .tab button:hover {
+    background-color: #48bbaf;
+}
+
+.tabcontent1 {
+    display:content;
+    padding-top: 6px 5px;
+    height: 500px;
+    width: auto;
+    background-color: #e49160;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+a{ /**/
+    color: rgb(24, 26, 23);
+    padding: 14px 25px;
+    text-align:left;
+    text-decoration: none;
+    font-weight: Bold;
+}
+.tab button.active{
+  background-color:  #e49160;
+}
+
+#div3{
+  height:400px;
+  width: auto;
+  border: 10px black;
+  background-color:hsl(170, 80%, 90%);
+  /*background-color: rgb(155, 64, 25,0.4); */
+  background-image: url(pizzeria-seamless-pattern-background-pizza-make-vector-38700057.jpeg);
+  background-repeat: repeat-x;
+}
+  
