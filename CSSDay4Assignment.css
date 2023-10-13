@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box; 
+    
+  }
+  .flex-container{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(199, 232, 232);
+    flex-direction: column;
+    margin: 6px;
+    padding: 1em;
+    
+  }
+  .flex-container > .top{
+    height: 8vh;
+    background-color: rgb(213, 163, 36);
+    margin: 6px;
+  }
+
+  .flex-container > .bottom{
+    height: 8vh;
+    background-color: rgb(213, 163, 36);
+    margin: 6px;
+  }
+
+  .main{
+    display:flex;
+    flex:1;
+  }
+
+  .main > .left{
+      flex: 20 20vw;
+      background-color: rgb(240, 233, 131);
+      margin: 6px;
+
+  }
+  .main > .right{
+    display: flex;
+    width: 15vh;
+    min-height: 10vh;
+    flex: 50 20vw;
+    background-color: rgb(221, 221, 89);
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 1em;
+    margin: 6px;
+
+}
+
+.right > .right-child1{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(213, 163, 36);
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .right > .right-child2{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(240, 233, 131);
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .right > .right-child3{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(213, 163, 36);
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+
+
+
