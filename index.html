@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <head>
     <title>My web page</title>
+    <style>
+        *{
+            text-indent: 50px;
+        }
+        #para1 {
+            font-size: 4vb;
+            direction: rtl;
+            text-transform: uppercase;
+            text-transform: capitalize;
+        }
+        #hd1{
+            color:brown ; 
+            background-color:black;
+
+        }
+        #decor{
+            text-decoration:underline;
+            text-decoration: overline;
+            text-decoration: line-through;
+            text-indent: 40px ;
+        }
+        
+    </style>
+    <link rel ="stylesheet" href ="practice.css">
 </head>
 <body>
-    <h1> MY WEB PAGE </h1>
-    <h1> This is my first Web page </h1> <!--block-->
+    <ol>
+        <li><a href="#section-1">Personal Information</a></li>
+        <li> <a href="#section-2">What is the HTML used for?</a></li>
+        <li><a href="#section-3">Where is HTML commonly used?</a></li>
+        <li><a href="#section-4">Why is HTML very important?</a></li>
+        <li><a href="#section-5">What is the most used HTML?</a></li>
+</ol>
+
+    <h1 style="color:brown ; background-color:black" > MY WEB PAGE </h1>
+    <p id ="para1"> This is my first Web page </p> <!--block-->
     <a href="https://www.google.com">click here</a><br><!--Inline-->
     <a href="https://www.google.com" Target = "_blank">click here NEXT tab</a><br>
     <a href ='#'>Another link </a>
     <abbr title ="WORLD WIDE WEBSITE"> WWW</abbr></br>
-
+    <p id ="decor">HTML stands for Hyper Text Markup Language. 
+        HTML is the standard markup language for creating Web pages. 
+        HTML describes the structure of a Web page.</p>
+    
+    <p id ="mars">
+        HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.
+    HTML stands for Hyper Text Markup Language. 
+    HTis the standard markup language for creating Web pages.HTML describes the structure of a Web page.
+    </p>
     <pre>
 
         This is pre formated Text
@@ -19,12 +59,13 @@
     <br>
 
     <table border ='6'>
+        <h2 id="section-1">Personal Information</h2>
         <caption>Personal Information</caption>
         <thead></thead>
         <tr>
-            <th colspan ="2">Name</th>
-            <th>city</th>
-            <th>Country</th>
+            <th id ="hd1">Name</th>
+            <th id ="hd1" >city</th>
+            <th id ="hd1">Country</th>
         </tr>
         </thead>
     <tbody>
@@ -45,14 +86,17 @@
 
     <br>
     <br>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <table border ='6'>
     <caption>Life Expectency by Current Age</caption>
         <thead></thead>
         <tr>
-            <th colspan ="2">65</th>
-            <th colspan ="2">40</th>
-            <th colspan ="2">20</th>
+            <th id ="hd1">65</th>
+            <th id ="hd1">40</th>
+            <th id ="hd1">20</th>
         </tr>
         </thead>
         <tbody>
@@ -85,30 +129,30 @@
         <tr>
             <th></th>
             <th></th>
-            <th>Bob</th>
-            <th>Alice</th>
+            <th id ="hd1">Bob</th>
+            <th id ="hd1">Alice</th>
         </tr>
        <tr>
-            <th rowspan ="2">Favourite</th>
-                <th>color</th>
+            <th id ="hd1">Favourite</th>
+                <th id ="hd1">color</th>
                 <td>blue</td>
                 <td>purple</td>
        </tr>
        <tr>
-            <th>flavor</th>
+            <th id ="hd1">flavor</th>
             <td>banana</td>
             <td>Chocolate</td>
        </tr>
 
        <tr>
-        <th rowspan ="2">Least</th>
-            <th>color</th>
+        <th id ="hd1">Least</th>
+            <th id ="hd1">color</th>
                 <td>yellow</td>
                 <td>pink</td>
    </tr>
    <tr>
-        <th>flavor</th>
-            <td>Mint</td>
+        <th id ="hd1">flavor</th>
+            <td id ="hd1">Mint</td>
             <td>Walnut</td>
    </tr>
 </table>
