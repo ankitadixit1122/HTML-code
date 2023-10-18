@@ -1,0 +1,112 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heading1style{
+    text-shadow: 4px 4px 4px rgb(154, 168, 154);
+    font-size: 40px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: center;
+}
+#heading2style{
+        text-shadow: 4px 4px 4px rgb(154, 168, 154);
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+
+}
+#heading3style{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+
+}
+
+table,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#td1{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#th1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
+    font-weight: Bold;
+    width:50%;
+    text-transform: capitalize;
+    color:rgb(0, 0, 0) ;
+    background-color: rgb(154, 168, 154);
+    white-space: nowrap;
+    
+    
+}
+    
+
+    
+table{
+    background-image:url(Global Food Company Header.jpeg);
+}
+
+
+#mar{
+
+    background-image:url(Global Food Company Header.jpeg);
+}
+.footer {
+    position: fixed;
+    font-size: 18px;
+    left: 0;
+    height: 55 px;;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(80, 94, 78);
+    color: rgb(17, 17, 17);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:link {
+    color: rgb(235, 228, 229);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: Bold;
+    
+}
+a:hover {
+    color: red;
+}
+
+.center{
+    text-align: center;
+    white-space: nowrap;
+    padding-bottom: 100px;
+
+}
+
+.left{
+    text-align: left;
+    width: 60%;
+    white-space: nowrap;
+    padding-top: px;
+}

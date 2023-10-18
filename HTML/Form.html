@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method ="post">
+        <fieldset>
+            <legend>Personal Inforamtion</legend>
+    <table>
+    <tr>
+        <td><lable for ="usrename"> Username:</lable></td>
+        <td><input type ="text" name="Username" id ="username" placeholder ="Enter Your Name" required /><br></td>
+    </tr>
+
+
+    <tr>
+        <td><lable for ="password"> Password:</lable></td>
+        <td><input type ="password" name="Password" id ="password" placeholder ="Enter Your Password"/><br></td>
+    </tr>
+
+
+    <tr>
+    <td> <lable for ="email"> Email</lable></td>
+    <td><input type ="email" name="email" id ="email" placeholder ="Enter Your Email"/><br></td>
+    </tr>
+
+
+    <tr>
+    <td> <lable for ="dob"> Date of Birth:</lable></td>
+    <td><input type ="date" name="dob" id ="dob" max="2020-12-31"/><br></td>
+    </tr>
+
+    <tr>
+        <td> <lable for ="hobbies"> Hobbies:</lable></td>
+        <td><input type ="radio" name="hobby" id ="reading" checked />Reading</td><br>
+        <td><input type ="radio" name="hobby" id ="music" />Music</td>
+
+        </tr><br>
+        <tr>
+            <td><label for ="city">Select City</label></td>
+            <td>
+            <select id="City" name="city" multiple> <!--if you want user to select multiple-->
+                <option value ="Select">Select</option>
+                <option value ="London">London</option>
+                <option value ="Newyork">NewYork</option>
+                <option value ="Mumbai">Mumbai</option>
+            </select></td>
+        </tr><br><br>
+        <tr>
+            <td>
+                <lable for ="address"> Address</lable>
+           
+               <td> <textarea cols ="30" rows ="5"></textarea>
+            </td>
+         </tr><br>
+
+         </table>
+        <input type ="Submit" Value="Sign In" />
+        </fieldset>
+    </form>
+</body>
+</html>
