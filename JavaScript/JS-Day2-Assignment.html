@@ -1,0 +1,59 @@
+<!doctype html>
+<title>LUCKY NUMBER</title>
+<head>
+<style>
+* {
+    box-sizing: border-box; 
+}
+.flex-container{
+    display: flex;
+    height: 35vh;
+    max-width: 60vh;
+    background-color: rgb(199, 232, 232);
+    background-image:url(number.jpeg);
+    margin: auto;
+    margin-top: 100px;
+}
+.flex-container > .top{
+    width: 50vh;
+    height: 30vh;
+    background-color: rgb(235, 229, 110);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    
+}
+
+</style>
+</head>
+<body>
+    <div class ="flex-container" >
+        <div class="top" align ="center">
+        
+        <legend><h2>Guess The Number</h2></legend>
+        <p>Select a number between 0-10</p>
+        <label for="guessField"><b>Enter a number:</b></label>
+        <input type="text" id="guessField">
+        <button onclick="guessnum()"> Submit</button><br>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let y = 4;
+        let guess = 1;
+        function guessnum() {
+        let x = document.getElementById("guessField").value;
+            if (x == y) {
+                alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                    + guess + " GUESS ");
+            }
+
+            else {
+                guess++;
+                alert("TRY AGAIN !!!")
+            }
+        }
+
+
+    </script></body>
+</html>
