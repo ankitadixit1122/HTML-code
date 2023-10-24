@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{
+    margin:0;
+
+}
+html, body {
+    height:100%; 
+    background-color: rgb(142, 188, 188);
+}
+
+#registration-page{
+    height: 100%;
+    background-color: rgb(184, 193, 196);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    }
+
+.sign-up{
+    flex:1;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: aliceblue;
+    border: 1px solid #999;
+    margin-top: auto;
+    margin-bottom:auto;
+
+}
+
+.form-header{
+    padding:15px 0;
+    border-bottom: 1px solid #cccccc;
+    background-color: #bbd8f5;
+    border-radius: 10px;
+}
+
+
+.form-header h1{
+    font-size: 28px;
+    text-align: center;
+    color:#666;
+
+}
+.form-body{
+    padding: 5px 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row ;
+}
+
+.input-group{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    padding-left:10px;
+}
+
+label{
+    color:#413b3b;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.radio-group{
+    display:flex;
+}
+
+.radio-group label{
+    color:#666;
+    cursor:pointer;
+}
+
+.radio-group div{
+    flex:1;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select{
+    font-size: size 18px;
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+    color:#666;
+    border:1px solid #cac6c6;
+    border-radius: 6px;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: ;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    
+}
+.form-footer h3{
+    font-size: 20px;
+    text-align: center;
+    color:#666;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #bbd8f5;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .row{
+        flex-direction:column; 
+    }
+}
+
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+<title>Document</title>
+</head>
+
+
+<body>
+    <section id="registration-page">
+        <form class ="sign-up">
+        <div class ="form-header">
+            <h1 >Employee Registration Form</h1>
+        </div>
+        <div class="form-body">
+            <div class="row">
+                <div class ="input-group">
+                    <label>First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter your first name">
+                </div> 
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id ="email" placeholder="Enter your Email Address">
+                </div>   
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="input-group">
+                    <label>Confirm password</label>
+                    <input type="password"  id="confirmpassword" placeholder="Enter your password again">
+                </div>
+            </div>
+            <div class="row">
+                <div class ="input-group">
+                    <label>Gender</label>
+                    <div class ="radio-group">
+                            <div>
+                                <label for="male">
+                                <input type="radio" name="gender" id="gender">
+                                Male
+                                </label>
+                            </div>
+                            <div>
+                                <label for="female">
+                                <input type ="radio" name="gender" id="gender">
+                                Female
+                                </label>
+                            </div>
+                            <div>
+                                <label for="other">
+                                <input type="radio" name="gender" id="gender">
+                                Other
+                                </label>
+                            </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="number" id ="age" placeholder="Enter your age ">
+                </div>
+            </div>   <!-- Gender And Age ends here -->
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Address</label>
+                    <input type="text" id ="address" placeholder="Enter your address">
+                </div>
+                <div class="input-group">
+                    <label for ="country"> Country</label>
+                    <select>
+                        <option>India</option>
+                        <option> USA</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                </div>
+            </div> <!--Address input & country-->
+        </div>
+        <div class="form-footer">
+            <button class="btn" onclick="empDetails()"><h3>Submit</h3></button>
+        </div>
+        </form>    
+    </section>
+    <script src ="JS-Day5-Assignment.js"></script>
+</body>
+</html>
