@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{
+    margin:0;
+
+}
+html, body {
+    height:100%; 
+    background-color: rgb(142, 188, 188);
+}
+
+#registration-page{
+    height: 100%;
+    background-color: rgb(184, 193, 196);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    }
+
+.sign-up{
+    flex:1;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: aliceblue;
+    border: 1px solid #999;
+    margin-top: auto;
+    margin-bottom:auto;
+
+}
+
+.form-header{
+    padding:15px 0;
+    border-bottom: 1px solid #cccccc;
+    background-color: #bbd8f5;
+    border-radius: 10px;
+}
+
+
+.form-header h1{
+    font-size: 28px;
+    text-align: center;
+    color:#666;
+
+}
+.form-body{
+    padding: 5px 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row ;
+}
+
+.input-group{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    padding-left:10px;
+}
+
+label{
+    color:#413b3b;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.radio-group{
+    display:flex;
+}
+
+.radio-group label{
+    color:#666;
+    cursor:pointer;
+}
+
+.radio-group div{
+    flex:1;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select{
+    font-size: size 18px;
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+    color:#666;
+    border:1px solid #cac6c6;
+    border-radius: 6px;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: ;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    
+}
+.form-footer h3{
+    font-size: 20px;
+    text-align: center;
+    color:#666;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #bbd8f5;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .row{
+        flex-direction:column; 
+    }
+}
+
+</style>
+
+<title>Document</title>
+</head>
+
+
+<body>
+    <section id="registration-page">
+        <form class ="sign-up" action="JS-Day6-Assignment-Result.html">
+        <div class ="form-header">
+            <h1 >Employee Details Form</h1>
+        </div>
+        <div class="form-body">
+            <div class="row">
+                <div class ="input-group">
+                    <label>First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter your first name">
+                </div> 
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Employee ID</label>
+                    <input type="number" id="empid" placeholder="Enter your Employee ID">
+                </div>
+                <div class="input-group">
+                    <label>Joining Date</label>
+                    <input type="date"  id="joiningDate" placeholder="Enter your Joining Date">
+                </div>
+            </div>
+            <div class="row">
+                
+            <div class="row">
+                <div class="input-group">
+                    <label>Worked Hours</label>
+                    <input type="number" id ="workhrs" placeholder="Worked hours">
+                </div>
+                <div class="input-group">
+                    <label for ="designation" id="design"> Designation</label>
+                    <select>
+                        <option value="Manager">Manager</option>
+                        <option value="Contractor">Contractor</option>
+                        <option value="Trainee">Trainee</option>
+                    </select>
+                </div>
+            </div> <!--Address input & country-->
+        </div>
+        <div class="form-footer">
+            
+            <button class="btn" type="submit" onclick="validateEmployee()"><h3>Submit</h3></button>
+        </div>
+        </form>    
+    </section>
+    <script src ="JS-Day6-Assignment.js">  /* import your JS file into your html file */
+
+     // Accessing class function
+    </script>
+    </body>>
+</html>
