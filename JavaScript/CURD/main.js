@@ -1,11 +1,12 @@
 function save(){
+   manageData();
     // this function saves the form page into local storage and calls the showAll() function 
 }
 
 
 
 
-function showAll(){
+function manageData(){
     alert(1)
     var table1 = document.getElementById('table1')
     table1.innerHTML= `
